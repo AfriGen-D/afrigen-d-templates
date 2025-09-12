@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 AfriGen-D Documentation
+    url: https://docs.afrigen-d.org
+    about: Check our comprehensive documentation for answers to common questions
+  - name: 💬 Community Discussions
+    url: https://github.com/orgs/AfriGen-D/discussions
+    about: Ask questions and discuss ideas with the AfriGen-D community
+  - name: 🏥 Data Access Support
+    url: mailto:data-support@afrigen-d.org
+    about: Get help with data access, downloads, and dataset questions
+  - name: 🤝 Collaboration Inquiries
+    url: mailto:partnerships@afrigen-d.org
+    about: Discuss research partnerships and collaborative opportunities
+  - name: 🌐 General Support
+    url: https://helpdesk.afrigen-d.org
+    about: General questions about AfriGen-D tools and services
