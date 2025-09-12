@@ -7,7 +7,7 @@ export default defineConfig({
   lang: 'en-US',
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
 
     nav: [
       { text: 'Home', link: '/' },

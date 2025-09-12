@@ -1,5 +1,5 @@
 # AfriGen-D Genomics CI Workflow
-# Logo: https://raw.githubusercontent.com/AfriGen-D/afrigen-d-templates/main/assets/afrigen-d-logo.svg
+# Logo: https://raw.githubusercontent.com/AfriGen-D/afrigen-d-templates/main/assets/afrigen-d-logo.png
 # Enabling innovation in African genomics research
 name: Genomics CI
 on:
