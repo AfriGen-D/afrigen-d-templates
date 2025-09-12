@@ -1,8 +1,15 @@
-# {{ PROJECT_NAME }}
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AfriGen-D/afrigen-d-templates/main/assets/afrigen-d-logo.svg" alt="AfriGen-D Logo" width="200" />
+  <h1>{{ PROJECT_NAME }}</h1>
+</div>
+
+<div align="center">
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/{{ DOI }}.svg)](https://doi.org/{{ DOI }})
 [![Build Status](https://github.com/AfriGen-D/{{ REPO_NAME }}/workflows/CI/badge.svg)](https://github.com/AfriGen-D/{{ REPO_NAME }}/actions)
+
+</div>
 
 > {{ PROJECT_DESCRIPTION }}
 

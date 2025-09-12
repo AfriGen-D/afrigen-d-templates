@@ -1,8 +1,15 @@
-# {{ DATASET_NAME }}
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AfriGen-D/afrigen-d-templates/main/assets/afrigen-d-logo.svg" alt="AfriGen-D Logo" width="200" />
+  <h1>{{ DATASET_NAME }}</h1>
+</div>
+
+<div align="center">
 
 [![DOI](https://zenodo.org/badge/DOI/{{ DOI }}.svg)](https://doi.org/{{ DOI }})
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Data Version](https://img.shields.io/badge/version-{{ VERSION }}-blue.svg)](releases)
+
+</div>
 
 > {{ DATASET_DESCRIPTION }}
 

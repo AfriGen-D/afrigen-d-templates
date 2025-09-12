@@ -1,10 +1,28 @@
-# AfriGen-D GitHub Templates
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AfriGen-D/afrigen-d-templates/main/assets/afrigen-d-logo.svg" alt="AfriGen-D Logo" width="200" />
+  <h1>AfriGen-D GitHub Templates</h1>
+</div>
 
-A comprehensive collection of repository and GitHub Pages templates for the AfriGen-D project, designed to standardize and streamline project development in genomics research.
+<div align="center">
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/AfriGen-D/afrigen-d-templates)](https://github.com/AfriGen-D/afrigen-d-templates/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/AfriGen-D/afrigen-d-templates)](https://github.com/AfriGen-D/afrigen-d-templates/stargazers)
+
+</div>
+
+> A comprehensive collection of repository and GitHub Pages templates for the AfriGen-D project, designed to standardize and streamline project development in genomics research.
 
 ## Overview
 
-This repository contains templates and configurations to help AfriGen-D maintain consistency, quality, and best practices across all repositories and documentation sites.
+AfriGen-D GitHub Templates is part of the AfriGen-D suite of resources designed to advance genomic research capabilities for African populations. This template collection provides standardized configurations and documentation to help AfriGen-D maintain consistency, quality, and best practices across all repositories and documentation sites.
+
+## Features
+
+- **Repository Templates**: Standardized project structures for genomics tools, Nextflow pipelines, and data resources
+- **GitHub Pages Templates**: Professional VitePress-based documentation sites with AfriGen-D branding
+- **Organization Templates**: Workflow templates and issue configurations for consistent project management
+- **Automated Deployment**: GitHub Actions workflows for seamless CI/CD and documentation publishing
 
 ## Template Categories
 
@@ -56,25 +74,42 @@ Template for genomic datasets and reference resources.
 
 ### 2. GitHub Pages Templates
 
-#### Project Site Template
-**Path**: `github-pages-templates/project-site/`
+#### Genomics Tool Documentation
+**Path**: `github-pages-templates/genomics-tool-docs/`
 
-Professional documentation site template for AfriGen-D projects.
+VitePress-based documentation site template for genomics tools and software packages.
 
 **Includes**:
-- Jekyll-based static site generator
-- AfriGen-D branded styling and colors
+- VitePress static site generator with modern design
+- AfriGen-D branded styling and navigation
+- Population-specific genomics features highlighting
 - Responsive design with mobile support
-- Navigation structure for documentation
-- SEO optimization and social media integration
-- Contact and support information
+- API reference and examples sections
+- Automated GitHub deployment workflow
 
-**Features**:
-- Modern, clean design
-- Grid-based layout for features and links
-- Integrated GitHub repository information
-- Footer with social links and license info
-- CSS custom properties for easy theming
+#### Nextflow Pipeline Documentation
+**Path**: `github-pages-templates/nextflow-pipeline-docs/`
+
+Specialized documentation template for Nextflow bioinformatics pipelines.
+
+**Includes**:
+- Pipeline workflow visualization support
+- Parameter documentation tables
+- Usage examples with sample data
+- Performance benchmarking sections
+- Integration with Nextflow Tower
+
+#### Data Resource Documentation
+**Path**: `github-pages-templates/data-resource-docs/`
+
+Documentation template for genomic datasets and reference resources.
+
+**Includes**:
+- Dataset metadata and quality metrics
+- Data access instructions and requirements
+- Population diversity information
+- Ethical considerations and data use agreements
+- Citation guidelines and examples
 
 ### 3. Organization Templates
 
@@ -149,24 +184,35 @@ Standardized issue templates and configuration for the organization.
 
 ### Setting Up GitHub Pages
 
-1. **Copy Pages Template**:
+1. **Add Documentation to Existing Repository**:
    ```bash
-   cp -r github-pages-templates/project-site/* /path/to/your-repo/
+   # Navigate to your repository
+   cd /path/to/your-repository
+   
+   # Copy genomics tool template
+   cp -r ../afrigen-d-templates/github-pages-templates/genomics-tool-docs/* ./docs/
+   
+   # OR copy pipeline template
+   cp -r ../afrigen-d-templates/github-pages-templates/nextflow-pipeline-docs/* ./docs/
+   
+   # OR copy data resource template
+   cp -r ../afrigen-d-templates/github-pages-templates/data-resource-docs/* ./docs/
    ```
 
-2. **Customize Configuration**:
-   Edit `_config.yml` and replace template variables:
-   ```yaml
-   title: "Your Project Name"
-   description: "Your project description"
-   baseurl: "/your-repo-name"
+2. **Customize VitePress Configuration**:
+   Edit `docs/.vitepress/config.ts` and replace template variables:
+   ```typescript
+   export default defineConfig({
+     title: 'Your Project Name',
+     description: 'Your project description',
+     base: '/your-repository-name/',  // Must match repo name
+   })
    ```
 
 3. **Enable GitHub Pages**:
    - Go to repository Settings > Pages
-   - Select "Deploy from a branch"
-   - Choose "main" branch and "/ (root)" folder
-   - Click Save
+   - Select "GitHub Actions" as source
+   - GitHub will automatically deploy using the included workflow
 
 ### Installing Organization Templates
 
@@ -195,17 +241,20 @@ For organization admins only:
 - Modify color schemes in documentation
 - Customize footer information and links
 
-#### GitHub Pages
-- Edit CSS custom properties in `assets/css/style.scss`:
-  ```scss
-  :root {
-    --afrigend-primary: #2E7D32;    // Main brand color
-    --afrigend-secondary: #FFA000;   // Accent color
-    --afrigend-accent: #1976D2;     // Link color
-  }
+#### GitHub Pages (VitePress)
+- Edit theme configuration in `.vitepress/config.ts`:
+  ```typescript
+  export default defineConfig({
+    themeConfig: {
+      logo: '/logo.svg',
+      socialLinks: [
+        { icon: 'github', link: 'https://github.com/AfriGen-D/your-repo' }
+      ]
+    }
+  })
   ```
-- Replace logo files in `assets/images/`
-- Update social media links in `_config.yml`
+- Replace logo files in `docs/public/`
+- Update navigation and sidebar configuration
 
 ### Content Customization
 
@@ -215,11 +264,11 @@ For organization admins only:
 - Customize installation instructions
 - Add domain-specific examples
 
-#### Documentation Structure
-- Modify navigation in `_config.yml`
-- Add new page templates
-- Create custom collections for tutorials
-- Update footer links and information
+#### Documentation Structure (VitePress)
+- Modify navigation in `.vitepress/config.ts`
+- Add new markdown pages in appropriate directories
+- Configure sidebar for different sections
+- Update footer and social links
 
 ### Workflow Customization
 
@@ -301,40 +350,75 @@ This template repository should be updated when:
 - New features increment minor version
 - Bug fixes increment patch version
 
-## Support and Contribution
+## Documentation
 
-### Getting Help
-- **Template Issues**: [GitHub Issues](https://github.com/AfriGen-D/afrigen-d-templates/issues)
-- **Usage Questions**: [GitHub Discussions](https://github.com/orgs/AfriGen-D/discussions)  
+- **[Creating New Documentation Repository](CREATE_NEW_DOCS_REPO.md)**: Step-by-step guide for standalone documentation sites
+- **[Adding Documentation to Existing Repository](ADD_DOCS_TO_EXISTING_REPO.md)**: Guide for adding documentation to existing projects
+- **Template Variables Reference**: See sections above for customization options
+
+## Contributing
+
+We welcome contributions from the genomics community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Setup
+
+```bash
+git clone https://github.com/AfriGen-D/afrigen-d-templates.git
+cd afrigen-d-templates
+# Test templates with sample projects
+```
+
+## Citation
+
+If you use AfriGen-D GitHub Templates in your research or projects, please cite:
+
+```bibtex
+@software{afrigen_d_templates_2025,
+  title = {AfriGen-D GitHub Templates},
+  author = {AfriGen-D Project},
+  year = {2025},
+  url = {https://github.com/AfriGen-D/afrigen-d-templates},
+  note = {Standardized templates for genomics research projects}
+}
+```
+
+## Support
+
+- **[Discussions](https://github.com/AfriGen-D/afrigen-d-templates/discussions)**: Community Q&A and feature requests
+- **[Issues](https://github.com/AfriGen-D/afrigen-d-templates/issues)**: Bug reports and technical issues
 - **Helpdesk**: [helpdesk.afrigen-d.org](https://helpdesk.afrigen-d.org)
+- **Website**: [afrigen-d.org](https://afrigen-d.org)
 
-### Contributing
-1. Fork this repository
-2. Create a feature branch
-3. Make your changes
-4. Test with a sample project
-5. Submit a pull request
+## About AfriGen-D
 
-### Feedback
-We welcome feedback on these templates! Please:
-- Report bugs or issues via our [helpdesk](https://helpdesk.afrigen-d.org)
-- Suggest improvements through GitHub Issues
-- Share usage experiences in Discussions
-- Contribute new templates via pull requests
+AfriGen-D is a project dedicated to enabling innovation in African genomics research through:
+
+- **Research Tools**: Cutting-edge bioinformatics software
+- **Data Resources**: Curated genomic datasets and reference panels
+- **Community**: Collaborative research networks
+- **Education**: Training and capacity building
+
+Visit [afrigen-d.org](https://afrigen-d.org) to learn more about our mission and projects.
 
 ## License
 
-This template collection is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
 - AfriGen-D project members and collaborators
-- GitHub community for template best practices
-- Jekyll and nf-core communities for inspiration
-- Open source genomics community
+- Contributing researchers and developers
+- Supporting institutions and funding agencies
+- The broader genomics and open science communities
 
 ---
 
-**AfriGen-D Project**  
-Enabling innovation in African genomics research  
-[afrigen-d.org](https://afrigen-d.org)
+<div align="center">
+  <p><strong>Enabling innovation in African genomics research</strong></p>
+  <p>
+    <a href="https://afrigen-d.org">Website</a> •
+    <a href="https://twitter.com/AfriGenD">Twitter</a> •
+    <a href="https://linkedin.com/company/afrigen-d">LinkedIn</a> •
+    <a href="https://youtube.com/@afrigen-d">YouTube</a>
+  </p>
+</div>
