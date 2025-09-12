@@ -55,9 +55,12 @@ cp -r ../afrigen-d-templates/github-pages-templates/data-resource-docs/* .
 
 ## Step 5: Customize Your Site
 
-Edit the main configuration file:
+Navigate to your repository and edit the main configuration file:
 
 ```bash
+# Make sure you're in your repository
+cd my-project-docs
+
 # Edit .vitepress/config.ts
 nano .vitepress/config.ts
 ```
@@ -83,7 +86,7 @@ export default defineConfig({
 ## Step 6: Edit Homepage Content
 
 ```bash
-# Edit the main page
+# Edit the main page (make sure you're in your repository directory)
 nano index.md
 ```
 

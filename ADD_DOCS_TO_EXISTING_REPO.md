@@ -40,9 +40,12 @@ No need to install anything locally! GitHub Actions will automatically install d
 
 ## Step 4: Customize Your Site
 
-Edit the main configuration file:
+Navigate to the docs directory and edit the main configuration file:
 
 ```bash
+# Navigate to docs directory
+cd docs
+
 # Edit .vitepress/config.ts
 nano .vitepress/config.ts
 ```
@@ -68,7 +71,7 @@ export default defineConfig({
 ## Step 5: Edit Homepage Content
 
 ```bash
-# Edit the main page
+# Edit the main page (you should still be in the docs directory)
 nano index.md
 ```
 
