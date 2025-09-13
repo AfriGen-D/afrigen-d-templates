@@ -2,9 +2,24 @@
  * Custom styles for AfriGen-D VitePress documentation
  */
 
-/* Logo styling optimization for wide AfriGen-D logo (512x178) */
+/* CSS Custom Properties */
+:root {
+  --vp-nav-logo-height: 100%;
+  
+  /* AfriGen-D brand colors */
+  --vp-c-brand: #2E7D32;
+  --vp-c-brand-light: #4CAF50;
+  --vp-c-brand-lighter: #66BB6A;
+  --vp-c-brand-dark: #1B5E20;
+  --vp-c-brand-darker: #2E7D32;
+  
+  --vp-c-accent: #FFA000;
+  --vp-c-accent-light: #FFB300;
+  --vp-c-accent-dark: #FF8F00;
+}
+
 .VPNavBarTitle .logo {
-  height: 28px !important;
+  height: var(--vp-nav-logo-height);
   width: auto !important;
   margin-right: 12px;
   object-fit: contain;
@@ -35,18 +50,6 @@
   margin: 0 auto;
 }
 
-/* AfriGen-D brand colors */
-:root {
-  --vp-c-brand: #2E7D32;
-  --vp-c-brand-light: #4CAF50;
-  --vp-c-brand-lighter: #66BB6A;
-  --vp-c-brand-dark: #1B5E20;
-  --vp-c-brand-darker: #2E7D32;
-  
-  --vp-c-accent: #FFA000;
-  --vp-c-accent-light: #FFB300;
-  --vp-c-accent-dark: #FF8F00;
-}
 
 /* Button styling with AfriGen-D colors */
 .VPButton.brand {
