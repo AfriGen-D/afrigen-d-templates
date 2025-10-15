@@ -387,41 +387,24 @@ This template repository should be updated when:
 
 ## Documentation
 
-### Getting Started Guides
+Comprehensive guides for all skill levels:
 
-Choose the approach that best fits your needs:
+### [📚 View All Documentation](docs/)
 
-- **[Creating Repository from GitHub UI](CREATE_REPO_FROM_GITHUB_UI.md)** ⭐ *Recommended for beginners*
-  - No installation required - works entirely in your browser
-  - Use GitHub's "Use this template" feature
-  - Perfect for quick setup without command-line tools
-  - Best for: Non-developers, quick prototypes, simple projects
+- **[Basic Guides](docs/basic/)** - Browser-only, no installation (10-20 min)
+- **[Advanced Guides](docs/advanced/)** - Full dev setup, command-line (30-120 min)
 
-- **[Adding Documentation to Existing Repository](ADD_DOCS_TO_EXISTING_REPO.md)**
-  - Add VitePress documentation to your existing project
-  - Keeps code and docs in the same repository
-  - Automated deployment with GitHub Actions
-  - Best for: Existing projects that need documentation
+### Quick Start
 
-- **[Creating New Documentation Repository](CREATE_NEW_DOCS_REPO.md)**
-  - Create standalone documentation site via command line
-  - Separate repository for documentation
-  - Full local development environment
-  - Best for: Large documentation sites, multi-project docs
+- **New to GitHub?** → [Creating Repository from GitHub UI](docs/basic/CREATE_REPO_FROM_GITHUB_UI.md)
+- **Have existing project?** → [Adding Documentation](docs/basic/ADD_DOCS_TO_EXISTING_REPO.md)
+- **Need full control?** → [Comprehensive Setup Guide](docs/advanced/SETUP_GUIDE.md)
 
-- **[Comprehensive Setup Guide](SETUP_GUIDE.md)** 🔧 *For advanced users*
-  - Detailed technical guide with all configuration options
-  - Advanced customization and theming
-  - Performance optimization tips
-  - Troubleshooting and maintenance
-  - Best for: Developers needing full control
+### Template Locations
 
-### Quick Reference
-
-- **Template Variables Reference**: See sections above for customization options
-- **Repository Templates**: Located in `repository-templates/`
-- **GitHub Pages Templates**: Located in `github-pages-templates/`
-- **Organization Templates**: Located in `organization-templates/`
+- **Repository Templates**: `repository-templates/`
+- **GitHub Pages Templates**: `github-pages-templates/`
+- **Organization Templates**: `organization-templates/`
 
 ## Contributing
 
