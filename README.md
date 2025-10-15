@@ -387,18 +387,19 @@ This template repository should be updated when:
 
 ## Documentation
 
-Comprehensive guides for all skill levels:
+Browser-based guides - no installation required!
 
 ### [📚 View All Documentation](docs/)
 
-- **[Basic Guides](docs/basic/)** - Browser-only, no installation (10-20 min)
-- **[Advanced Guides](docs/advanced/)** - Full dev setup, command-line (30-120 min)
+**Available Guides:**
+
+- **[Creating Repository from GitHub UI](docs/CREATE_REPO_FROM_GITHUB_UI.md)** - Start a new project (10-15 min)
+- **[Adding Documentation to Existing Repository](docs/ADD_DOCS_TO_EXISTING_REPO.md)** - Add docs to existing project (15-20 min)
 
 ### Quick Start
 
-- **New to GitHub?** → [Creating Repository from GitHub UI](docs/basic/CREATE_REPO_FROM_GITHUB_UI.md)
-- **Have existing project?** → [Adding Documentation](docs/basic/ADD_DOCS_TO_EXISTING_REPO.md)
-- **Need full control?** → [Comprehensive Setup Guide](docs/advanced/SETUP_GUIDE.md)
+- **New project?** → [Create from GitHub UI](docs/CREATE_REPO_FROM_GITHUB_UI.md)
+- **Existing project?** → [Add documentation](docs/ADD_DOCS_TO_EXISTING_REPO.md)
 
 ### Template Locations
 
