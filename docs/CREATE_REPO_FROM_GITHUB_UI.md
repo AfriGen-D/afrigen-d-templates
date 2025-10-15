@@ -43,9 +43,52 @@ Navigate to the appropriate AfriGen-D template repository:
 
 GitHub creates your new repository with all template files instantly!
 
-### Step 4: Customize Your Project
+### Step 4: Customize Your Project (Automated - Recommended 🤖)
 
-Edit files directly on GitHub:
+**The easiest way:** Use the automated configuration system!
+
+1. Click on **`template.config.yml`** in your new repository
+2. Click the **pencil icon** (✏️ Edit this file)
+3. Fill in your project details:
+
+   ```yaml
+   project:
+     name: "My Awesome Genomics Tool"
+     description: "A tool for genomic analysis"
+     repo_name: "my-awesome-tool"  # Must match your repo name
+     version: "1.0.0"
+
+   author:
+     name: "Your Name"
+     email: "your.email@example.com"
+     year: "2025"
+
+   technical:
+     language: "Python"
+     min_version: "3.8"
+     # ... fill in the rest
+   ```
+
+4. Scroll down and click **"Commit changes..."**
+5. **Important**: Enter commit message: **`Configure project variables`** (exact phrase)
+6. Click **"Commit changes"**
+
+**That's it!** GitHub Actions will automatically:
+
+- Replace all `{{ VARIABLE }}` placeholders in all files
+- Commit the changes
+- Delete the config files when done
+- Takes about 1 minute
+
+Watch the progress in the **Actions** tab of your repository.
+
+**See the complete guide:** [Automated Template Configuration](CONFIGURATION.md)
+
+---
+
+### Step 4: Customize Your Project (Manual Alternative)
+
+If you prefer to customize files manually:
 
 1. Click on **README.md** in your new repository
 2. Click the **pencil icon** (✏️ Edit this file)
@@ -59,6 +102,8 @@ Edit files directly on GitHub:
 7. Click **"Commit changes"**
 
 Repeat for other files as needed (LICENSE, CONTRIBUTING.md, etc.).
+
+**Note**: The automated method (above) is much faster and more reliable!
 
 ## Method 2: Manual Repository Creation
 
