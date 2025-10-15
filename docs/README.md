@@ -35,3 +35,11 @@ Command-line tools and local development. For experienced developers.
 **New to GitHub?** → [Basic Guides](basic/)
 **Experienced developer?** → [Advanced Guides](advanced/)
 **Not sure?** → Start with [GitHub UI guide](basic/CREATE_REPO_FROM_GITHUB_UI.md)
+
+## Template Repositories
+
+Ready to create a project? Use these GitHub templates:
+
+- [Genomics Tool Template](https://github.com/AfriGen-D/genomics-tool-template)
+- [Nextflow Pipeline Template](https://github.com/AfriGen-D/nextflow-pipeline-template)
+- [Data Resource Template](https://github.com/AfriGen-D/data-resource-template)

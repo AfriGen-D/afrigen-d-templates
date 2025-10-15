@@ -79,6 +79,12 @@ Once you're comfortable with these guides, explore our [Advanced Guides](../adva
 
 ## 📖 Additional Resources
 
+### Template Repositories
+- **[Genomics Tool Template](https://github.com/AfriGen-D/genomics-tool-template)**: For tools and software
+- **[Nextflow Pipeline Template](https://github.com/AfriGen-D/nextflow-pipeline-template)**: For pipelines
+- **[Data Resource Template](https://github.com/AfriGen-D/data-resource-template)**: For datasets
+
+### Documentation
 - **[Template Variables Reference](../../README.md#template-variables-reference)**: List of all customizable placeholders
 - **[Contributing Guidelines](../../CONTRIBUTING.md)**: How to contribute to templates
 - **[GitHub Documentation](https://docs.github.com)**: Official GitHub help

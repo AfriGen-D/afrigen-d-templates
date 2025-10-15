@@ -63,8 +63,10 @@ AfriGen-D GitHub Templates is part of the AfriGen-D suite of resources designed 
 
 ### 1. Repository Templates
 
+Use GitHub's "Use this template" button to instantly create new projects from these templates:
+
 #### Genomics Tool Template
-**Path**: `repository-templates/genomics-tool-template/`
+**GitHub**: [AfriGen-D/genomics-tool-template](https://github.com/AfriGen-D/genomics-tool-template)
 
 Template for bioinformatics tools and software packages.
 
@@ -79,7 +81,7 @@ Template for bioinformatics tools and software packages.
 **Use for**: Command-line tools, Python packages, R packages, standalone software
 
 #### Nextflow Pipeline Template
-**Path**: `repository-templates/nextflow-pipeline-template/`
+**GitHub**: [AfriGen-D/nextflow-pipeline-template](https://github.com/AfriGen-D/nextflow-pipeline-template)
 
 Template for Nextflow-based bioinformatics pipelines following nf-core standards.
 
@@ -93,7 +95,7 @@ Template for Nextflow-based bioinformatics pipelines following nf-core standards
 **Use for**: Genomic analysis pipelines, multi-step workflows, data processing pipelines
 
 #### Data Resource Template
-**Path**: `repository-templates/data-resource-template/`
+**GitHub**: [AfriGen-D/data-resource-template](https://github.com/AfriGen-D/data-resource-template)
 
 Template for genomic datasets and reference resources.
 
@@ -175,16 +177,14 @@ Standardized issue templates and configuration for the organization.
 
 ### Using Repository Templates
 
-1. **Create New Repository from Template**:
-   ```bash
-   # Clone the desired template
-   git clone https://github.com/AfriGen-D/afrigen-d-templates.git
-   cd afrigen-d-templates
-   
-   # Copy template to new project
-   cp -r repository-templates/genomics-tool-template/ /path/to/new-project/
-   cd /path/to/new-project/
-   ```
+1. **Create New Repository from Template** (Recommended):
+   - Visit one of our template repositories:
+     - [Genomics Tool Template](https://github.com/AfriGen-D/genomics-tool-template)
+     - [Nextflow Pipeline Template](https://github.com/AfriGen-D/nextflow-pipeline-template)
+     - [Data Resource Template](https://github.com/AfriGen-D/data-resource-template)
+   - Click the **"Use this template"** button
+   - Name your repository and click "Create repository"
+   - GitHub instantly creates your project with all template files!
 
 2. **Customize Template Variables**:
    Replace the following placeholders in all files:
