@@ -11,8 +11,24 @@ Simple, browser-based guides for creating AfriGen-D projects. No installation re
 
 ## 📚 Available Guides
 
+### [Automated Template Configuration](CONFIGURATION.md) 🤖
+⭐ **The easiest way to customize your template!**
+
+Learn how to use the automated configuration system that replaces all template variables automatically.
+
+**What you'll learn:**
+- Edit one config file with your project details
+- Let GitHub Actions replace all `{{ VARIABLE }}` placeholders
+- No manual search-and-replace needed!
+
+**Time:** 2-3 minutes + 1 minute for automation
+
+**Prerequisites:**
+- Repository created from AfriGen-D template
+
+---
+
 ### [Creating Repository from GitHub UI](CREATE_REPO_FROM_GITHUB_UI.md)
-⭐ **Start here if you're new!**
 
 Learn how to create a new repository entirely through the GitHub web interface.
 
@@ -50,8 +66,9 @@ Add VitePress documentation to your existing project with minimal setup.
 
 If you're ready to dive in:
 
-1. **New project?** → Start with [Creating Repository from GitHub UI](CREATE_REPO_FROM_GITHUB_UI.md)
-2. **Existing project?** → Use [Adding Documentation to Existing Repository](ADD_DOCS_TO_EXISTING_REPO.md)
+1. **Want automatic setup?** → Use [Automated Configuration](CONFIGURATION.md) (recommended!)
+2. **New project?** → Start with [Creating Repository from GitHub UI](CREATE_REPO_FROM_GITHUB_UI.md)
+3. **Existing project?** → Use [Adding Documentation to Existing Repository](ADD_DOCS_TO_EXISTING_REPO.md)
 
 ## 💡 Tips for Success
 
