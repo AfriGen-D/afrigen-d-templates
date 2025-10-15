@@ -13,6 +13,41 @@
 
 > A comprehensive collection of repository and GitHub Pages templates for the AfriGen-D project, designed to standardize and streamline project development in genomics research.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Template Categories](#template-categories)
+  - [1. Repository Templates](#1-repository-templates)
+    - [Genomics Tool Template](#genomics-tool-template)
+    - [Nextflow Pipeline Template](#nextflow-pipeline-template)
+    - [Data Resource Template](#data-resource-template)
+  - [2. GitHub Pages Templates](#2-github-pages-templates)
+    - [Genomics Tool Documentation](#genomics-tool-documentation)
+    - [Nextflow Pipeline Documentation](#nextflow-pipeline-documentation)
+    - [Data Resource Documentation](#data-resource-documentation)
+  - [3. Organization Templates](#3-organization-templates)
+    - [Workflow Templates](#workflow-templates)
+    - [Issue Templates](#issue-templates)
+- [Quick Start Guide](#quick-start-guide)
+  - [Using Repository Templates](#using-repository-templates)
+  - [Setting Up GitHub Pages](#setting-up-github-pages)
+  - [Installing Organization Templates](#installing-organization-templates)
+- [Customization Guide](#customization-guide)
+  - [Branding and Styling](#branding-and-styling)
+  - [Content Customization](#content-customization)
+  - [Workflow Customization](#workflow-customization)
+- [Template Variables Reference](#template-variables-reference)
+- [Best Practices](#best-practices)
+- [Maintenance and Updates](#maintenance-and-updates)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [Support](#support)
+- [About AfriGen-D](#about-afrigen-d)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
 ## Overview
 
 AfriGen-D GitHub Templates is part of the AfriGen-D suite of resources designed to advance genomic research capabilities for African populations. This template collection provides standardized configurations and documentation to help AfriGen-D maintain consistency, quality, and best practices across all repositories and documentation sites.
@@ -352,9 +387,41 @@ This template repository should be updated when:
 
 ## Documentation
 
-- **[Creating New Documentation Repository](CREATE_NEW_DOCS_REPO.md)**: Step-by-step guide for standalone documentation sites
-- **[Adding Documentation to Existing Repository](ADD_DOCS_TO_EXISTING_REPO.md)**: Guide for adding documentation to existing projects
+### Getting Started Guides
+
+Choose the approach that best fits your needs:
+
+- **[Creating Repository from GitHub UI](CREATE_REPO_FROM_GITHUB_UI.md)** ⭐ *Recommended for beginners*
+  - No installation required - works entirely in your browser
+  - Use GitHub's "Use this template" feature
+  - Perfect for quick setup without command-line tools
+  - Best for: Non-developers, quick prototypes, simple projects
+
+- **[Adding Documentation to Existing Repository](ADD_DOCS_TO_EXISTING_REPO.md)**
+  - Add VitePress documentation to your existing project
+  - Keeps code and docs in the same repository
+  - Automated deployment with GitHub Actions
+  - Best for: Existing projects that need documentation
+
+- **[Creating New Documentation Repository](CREATE_NEW_DOCS_REPO.md)**
+  - Create standalone documentation site via command line
+  - Separate repository for documentation
+  - Full local development environment
+  - Best for: Large documentation sites, multi-project docs
+
+- **[Comprehensive Setup Guide](SETUP_GUIDE.md)** 🔧 *For advanced users*
+  - Detailed technical guide with all configuration options
+  - Advanced customization and theming
+  - Performance optimization tips
+  - Troubleshooting and maintenance
+  - Best for: Developers needing full control
+
+### Quick Reference
+
 - **Template Variables Reference**: See sections above for customization options
+- **Repository Templates**: Located in `repository-templates/`
+- **GitHub Pages Templates**: Located in `github-pages-templates/`
+- **Organization Templates**: Located in `organization-templates/`
 
 ## Contributing
 
