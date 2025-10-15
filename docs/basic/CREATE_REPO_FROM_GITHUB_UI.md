@@ -15,124 +15,54 @@ The easiest way to create a new AfriGen-D project - no command line or local set
 ✅ **Fast Setup**: Create and deploy in minutes
 ✅ **Visual Interface**: Edit files with GitHub's built-in editor
 
-## Method 1: Using GitHub Repository Templates (Recommended)
+## Method 1: Use This Template (Recommended)
 
-If AfriGen-D has set up the repository templates on GitHub, this is the fastest method.
+The fastest way - use GitHub's built-in template feature to create your project instantly.
 
-### Step 1: Find the Template Repository
+### Step 1: Choose Your Template
 
-Navigate to one of the AfriGen-D template repositories:
-- **Genomics Tool**: `github.com/AfriGen-D/genomics-tool-template`
-- **Nextflow Pipeline**: `github.com/AfriGen-D/nextflow-pipeline-template`
-- **Data Resource**: `github.com/AfriGen-D/data-resource-template`
+Navigate to the appropriate AfriGen-D template repository:
+
+- **[Genomics Tool Template](https://github.com/AfriGen-D/genomics-tool-template)** - For bioinformatics tools and software packages
+- **[Nextflow Pipeline Template](https://github.com/AfriGen-D/nextflow-pipeline-template)** - For Nextflow/nf-core pipelines
+- **[Data Resource Template](https://github.com/AfriGen-D/data-resource-template)** - For genomic datasets and references
 
 ### Step 2: Use This Template
 
-1. Click the **"Use this template"** button (green button near the top)
+1. Click the green **"Use this template"** button (top right of the page)
 2. Select **"Create a new repository"**
 
 ### Step 3: Configure Your Repository
 
-1. **Owner**: Select AfriGen-D organization (or your account)
+1. **Owner**: Select AfriGen-D organization (if you're a member) or your personal account
 2. **Repository name**: Enter your project name (e.g., `afrigen-qc-toolkit`)
 3. **Description**: Add a brief description
 4. **Visibility**: Choose Public or Private
 5. **Include all branches**: Leave unchecked
 6. Click **"Create repository"**
 
-GitHub will create your new repository with all template files!
+GitHub creates your new repository with all template files instantly!
 
 ### Step 4: Customize Your Project
 
-Your repository is now created. Edit files directly on GitHub:
+Edit files directly on GitHub:
 
-1. Click on **README.md**
-2. Click the **pencil icon** (Edit this file)
+1. Click on **README.md** in your new repository
+2. Click the **pencil icon** (✏️ Edit this file)
 3. Replace template placeholders:
    - `{{ PROJECT_NAME }}` → Your project name
    - `{{ PROJECT_DESCRIPTION }}` → Your description
    - `{{ REPO_NAME }}` → Your repository name
-4. Click **"Commit changes..."**
-5. Add commit message: "Customize README"
-6. Click **"Commit changes"**
+4. Preview changes (click "Preview" tab)
+5. Scroll down and click **"Commit changes..."**
+6. Enter commit message: "Customize README"
+7. Click **"Commit changes"**
 
-Repeat for other files as needed.
+Repeat for other files as needed (LICENSE, CONTRIBUTING.md, etc.).
 
-### Step 5: Add Documentation (Optional)
+## Method 2: Manual Repository Creation
 
-If you want a GitHub Pages documentation site:
-
-1. In your repository, go to **"Add file" → "Create new file"**
-2. Name it: `docs/index.md`
-3. Copy content from the template repository's docs folder
-4. Commit the file
-5. Continue to [Enable GitHub Pages](#enable-github-pages)
-
-## Method 2: Fork and Customize Template Repository
-
-If templates aren't set up as GitHub templates, you can fork the templates repo.
-
-### Step 1: Fork the Templates Repository
-
-1. Go to `github.com/AfriGen-D/afrigen-d-templates`
-2. Click **"Fork"** button (top right)
-3. Select your destination (AfriGen-D org or personal account)
-4. **Uncheck** "Copy the main branch only"
-5. Click **"Create fork"**
-
-### Step 2: Clean Up Your Fork
-
-Your fork now contains ALL templates. You need to keep only the one you want:
-
-1. Go to your forked repository
-2. Click on **"Settings"** tab
-3. Scroll down to **"Repository name"**
-4. Rename to your project name (e.g., `afrigen-qc-toolkit`)
-5. Update description
-6. Click **"Rename"**
-
-### Step 3: Remove Unwanted Files
-
-1. Navigate to the repository root
-2. For each folder you DON'T need, click on it
-3. Click the **"..."** menu → **"Delete directory"**
-4. Keep only your chosen template folder
-5. Commit the deletion
-
-**Keep one of:**
-- `repository-templates/genomics-tool-template/`
-- `repository-templates/nextflow-pipeline-template/`
-- `repository-templates/data-resource-template/`
-
-**Delete:**
-- Other template folders
-- `github-pages-templates/` (unless you need docs)
-- `organization-templates/`
-- Setup guides (optional)
-
-### Step 4: Move Template Files to Root
-
-You can't move files directly in GitHub UI, but you can:
-
-1. **Option A - Local Setup** (requires Git):
-   ```bash
-   git clone your-fork-url
-   cd your-fork
-   mv repository-templates/genomics-tool-template/* .
-   rm -rf repository-templates/
-   git add .
-   git commit -m "Move template to root"
-   git push
-   ```
-
-2. **Option B - Recreate Structure**:
-   - Create new files in root directory
-   - Copy/paste content from template folder
-   - Delete template folders when done
-
-## Method 3: Manual Repository Creation
-
-Create a completely new repository and add template files manually.
+Create a completely new repository and manually add only the files you need from the templates.
 
 ### Step 1: Create New Repository
 
