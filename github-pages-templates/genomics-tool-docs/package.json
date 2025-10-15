@@ -1,0 +1,27 @@
+{
+  "name": "{{ PACKAGE_NAME }}",
+  "version": "{{ VERSION }}",
+  "description": "{{ PROJECT_DESCRIPTION }}",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "keywords": [
+    "genomics",
+    "bioinformatics",
+    "documentation",
+    "afrigen-d"
+  ],
+  "author": "AfriGen-D Project",
+  "license": "MIT",
+  "homepage": "https://afrigen-d.github.io/{{ REPO_NAME }}",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AfriGen-D/{{ REPO_NAME }}.git"
+  }
+}
