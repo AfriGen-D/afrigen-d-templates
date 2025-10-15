@@ -59,6 +59,22 @@ AfriGen-D GitHub Templates is part of the AfriGen-D suite of resources designed 
 - **Organization Templates**: Workflow templates and issue configurations for consistent project management
 - **Automated Deployment**: GitHub Actions workflows for seamless CI/CD and documentation publishing
 
+## Documentation
+
+Browser-based guides - no installation required!
+
+### [📚 View All Documentation](docs/)
+
+**Available Guides:**
+
+- **[Creating Repository from GitHub UI](docs/CREATE_REPO_FROM_GITHUB_UI.md)** - Start a new project (10-15 min)
+- **[Adding Documentation to Existing Repository](docs/ADD_DOCS_TO_EXISTING_REPO.md)** - Add docs to existing project (15-20 min)
+
+### Quick Start
+
+- **New project?** → [Create from GitHub UI](docs/CREATE_REPO_FROM_GITHUB_UI.md)
+- **Existing project?** → [Add documentation](docs/ADD_DOCS_TO_EXISTING_REPO.md)
+
 ## Template Categories
 
 ### 1. Repository Templates
@@ -384,28 +400,6 @@ This template repository should be updated when:
 - Breaking changes increment major version
 - New features increment minor version
 - Bug fixes increment patch version
-
-## Documentation
-
-Browser-based guides - no installation required!
-
-### [📚 View All Documentation](docs/)
-
-**Available Guides:**
-
-- **[Creating Repository from GitHub UI](docs/CREATE_REPO_FROM_GITHUB_UI.md)** - Start a new project (10-15 min)
-- **[Adding Documentation to Existing Repository](docs/ADD_DOCS_TO_EXISTING_REPO.md)** - Add docs to existing project (15-20 min)
-
-### Quick Start
-
-- **New project?** → [Create from GitHub UI](docs/CREATE_REPO_FROM_GITHUB_UI.md)
-- **Existing project?** → [Add documentation](docs/ADD_DOCS_TO_EXISTING_REPO.md)
-
-### Template Locations
-
-- **Repository Templates**: `repository-templates/`
-- **GitHub Pages Templates**: `github-pages-templates/`
-- **Organization Templates**: `organization-templates/`
 
 ## Contributing
 
