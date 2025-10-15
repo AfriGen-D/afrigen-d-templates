@@ -63,7 +63,7 @@ AfriGen-D GitHub Templates is part of the AfriGen-D suite of resources designed 
 
 Browser-based guides - no installation required!
 
-### [📚 View All Documentation](docs/)
+### [View All Documentation](docs/)
 
 **Available Guides:**
 
