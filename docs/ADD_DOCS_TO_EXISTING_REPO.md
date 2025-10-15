@@ -34,11 +34,9 @@ cp -r ../afrigen-d-templates/github-pages-templates/nextflow-pipeline-docs/* ./d
 cp -r ../afrigen-d-templates/github-pages-templates/data-resource-docs/* ./docs/
 ```
 
-## Step 3: Skip Installation (GitHub Will Handle It)
+> **💡 Note:** No need to install anything locally! GitHub Actions will automatically install dependencies and build your site when you push to GitHub.
 
-No need to install anything locally! GitHub Actions will automatically install dependencies and build your site.
-
-## Step 4: Customize Your Site
+## Step 3: Customize Your Site
 
 Navigate to the docs directory and edit the main configuration file:
 
@@ -68,7 +66,7 @@ export default defineConfig({
 
 **Important**: The `base` field must exactly match your GitHub repository name with slashes: `/repo-name/`
 
-## Step 5: Edit Homepage Content
+## Step 4: Edit Homepage Content
 
 ```bash
 # Edit the main page (you should still be in the docs directory)
@@ -95,11 +93,7 @@ hero:
 ---
 ```
 
-## Step 6: Skip Local Testing (Optional)
-
-Local testing requires Node.js installation. Since GitHub Actions will build and deploy automatically, you can skip this step and test directly on GitHub Pages.
-
-## Step 7: Commit Your Changes
+## Step 5: Commit Your Changes
 
 ```bash
 # Go back to repository root
@@ -115,7 +109,7 @@ git commit -m "Add documentation site"
 git push origin main
 ```
 
-## Step 8: Enable GitHub Pages
+## Step 6: Enable GitHub Pages
 
 1. **Go to your repository on GitHub**
 2. **Click "Settings" tab**
@@ -125,13 +119,13 @@ git push origin main
    - Leave all other settings as default
 5. **Click "Save"**
 
-## Step 9: Wait for Deployment
+## Step 7: Wait for Deployment
 
 1. **Go to "Actions" tab** in your repository
 2. **Wait for the workflow to complete** (usually 2-5 minutes)
 3. **Look for green checkmark** ✅
 
-## Step 10: View Your Site
+## Step 8: View Your Site
 
 Your site will be available at:
 ```
