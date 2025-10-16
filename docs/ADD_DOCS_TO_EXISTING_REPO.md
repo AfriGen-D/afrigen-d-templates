@@ -38,7 +38,7 @@ cp -r ../afrigen-d-templates/github-pages-templates/data-resource-docs/* ./docs/
 
 ## Step 3: Customize Your Site
 
-Navigate to the docs directory and edit the main configuration file:
+Edit the main VitePress configuration file:
 
 ```bash
 # Navigate to docs directory
@@ -55,7 +55,7 @@ export default defineConfig({
   title: 'Your Project Name',           // Change this
   description: 'Your project description', // Change this
   base: '/your-repository-name/',       // Must match your GitHub repo name
-  
+
   themeConfig: {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/AfriGen-D/your-repository-name' } // Change this
@@ -66,11 +66,13 @@ export default defineConfig({
 
 **Important**: The `base` field must exactly match your GitHub repository name with slashes: `/repo-name/`
 
+> **💡 Tip:** For full repository templates that include automated configuration, see the [Automated Configuration Guide](CONFIGURATION.md) for an easier setup process.
+
 ## Step 4: Edit Homepage Content
 
 ```bash
-# Edit the main page (you should still be in the docs directory)
-nano index.md
+# Edit the main page
+nano docs/index.md
 ```
 
 Update the hero section:
@@ -81,7 +83,7 @@ layout: home
 
 hero:
   name: "Your Project Name"
-  text: "Your Project Type"  
+  text: "Your Project Type"
   tagline: "Your project tagline"
   actions:
     - theme: brand
@@ -128,29 +130,35 @@ git push origin main
 ## Step 8: View Your Site
 
 Your site will be available at:
-```
+
+```text
 https://afrigen-d.github.io/your-repository-name/
 ```
 
 ## Troubleshooting
 
 ### Site Shows 404 Error
+
 **Problem**: Page not found when visiting the URL
 
 **Solution**: Check that `base: '/your-repository-name/'` in `.vitepress/config.ts` exactly matches your repository name.
 
 ### Workflow Fails
+
 **Problem**: GitHub Actions shows red X
 
 **Solutions**:
+
 1. Check that `docs/package.json` exists
 2. Look at error logs in Actions tab for specific errors
 3. Ensure all template files were copied correctly
 
 ### Changes Not Showing
+
 **Problem**: Site doesn't update after pushing changes
 
 **Solutions**:
+
 1. Wait 2-5 minutes for deployment
 2. Hard refresh browser (Ctrl+F5)
 3. Check Actions tab for new deployment
@@ -175,7 +183,7 @@ GitHub will automatically redeploy your site within a few minutes.
 
 Your repository should look like this:
 
-```
+```text
 your-repository/
 ├── docs/                     # Documentation files
 │   ├── .vitepress/
