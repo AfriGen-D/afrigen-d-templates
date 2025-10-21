@@ -37,6 +37,11 @@
   - [Branding and Styling](#branding-and-styling)
   - [Content Customization](#content-customization)
   - [Workflow Customization](#workflow-customization)
+- [Style Guide](#style-guide)
+  - [Brand Colors](#brand-colors)
+  - [Typography](#typography)
+  - [UI Components](#ui-components)
+  - [Design Principles](#design-principles)
 - [Template Variables Reference](#template-variables-reference)
 - [Best Practices](#best-practices)
 - [Maintenance and Updates](#maintenance-and-updates)
@@ -334,6 +339,184 @@ For organization admins only:
 - Create custom field types
 - Modify validation requirements
 - Add automated assignments
+
+## Style Guide
+
+### Brand Colors
+
+The AfriGen-D brand uses a distinctive color palette inspired by the logo:
+
+#### Primary Colors
+
+| Color | Hex Code | Usage | Preview |
+|-------|----------|-------|---------|
+| **AfriGen Red** | `#C94234` | Primary brand color, links, primary buttons | ![#C94234](https://via.placeholder.com/50x20/C94234/C94234.png) |
+| **AfriGen Red Light** | `#D95C4E` | Hover states, lighter accents | ![#D95C4E](https://via.placeholder.com/50x20/D95C4E/D95C4E.png) |
+| **AfriGen Red Dark** | `#A33529` | Active states, darker accents | ![#A33529](https://via.placeholder.com/50x20/A33529/A33529.png) |
+
+#### Accent Colors
+
+| Color | Hex Code | Usage | Preview |
+|-------|----------|-------|---------|
+| **AfriGen Yellow** | `#F4A535` | Accent highlights, feature cards | ![#F4A535](https://via.placeholder.com/50x20/F4A535/F4A535.png) |
+| **AfriGen Yellow Light** | `#F6B854` | Lighter accents | ![#F6B854](https://via.placeholder.com/50x20/F6B854/F6B854.png) |
+| **AfriGen Yellow Dark** | `#E89420` | Hover states for yellow elements | ![#E89420](https://via.placeholder.com/50x20/E89420/E89420.png) |
+
+#### Supporting Colors
+
+| Color | Hex Code | Usage | Preview |
+|-------|----------|-------|---------|
+| **AfriGen Green** | `#2E7D32` | DNA helix accent, success states | ![#2E7D32](https://via.placeholder.com/50x20/2E7D32/2E7D32.png) |
+| **AfriGen Green Light** | `#4CAF50` | Lighter green accents | ![#4CAF50](https://via.placeholder.com/50x20/4CAF50/4CAF50.png) |
+| **AfriGen Green Dark** | `#1B5E20` | Darker green accents | ![#1B5E20](https://via.placeholder.com/50x20/1B5E20/1B5E20.png) |
+
+#### Neutral Colors
+
+| Color | Hex Code | Usage | Preview |
+|-------|----------|-------|---------|
+| **Black** | `#000000` | Text, headers (light mode) | ![#000000](https://via.placeholder.com/50x20/000000/000000.png) |
+| **Dark Grey** | `#374151` | Secondary text, icons | ![#374151](https://via.placeholder.com/50x20/374151/374151.png) |
+| **Medium Grey** | `#9ca3af` | Borders, inactive elements | ![#9ca3af](https://via.placeholder.com/50x20/9ca3af/9ca3af.png) |
+| **Light Grey** | `#e5e7eb` | Backgrounds, dividers | ![#e5e7eb](https://via.placeholder.com/50x20/e5e7eb/e5e7eb.png) |
+| **White** | `#ffffff` | Backgrounds, cards (light mode) | ![#ffffff](https://via.placeholder.com/50x20/ffffff/ffffff.png) |
+
+### Typography
+
+#### Font Families
+
+- **Primary Font**: System font stack for optimal performance
+  ```css
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  ```
+- **Monospace Font**: For code blocks
+  ```css
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  ```
+
+#### Font Sizes
+
+| Element | Size | Usage |
+|---------|------|-------|
+| Hero Title | 48px | Homepage hero sections |
+| H1 | 32px | Main page titles |
+| H2 | 24px | Section headers |
+| H3 | 20px | Subsection headers |
+| Body | 16px | Main content |
+| Small | 14px | Captions, metadata |
+
+### UI Components
+
+#### Buttons
+
+**Primary Button (Red)**
+- Background: `#C94234`
+- Text: `#ffffff` (white)
+- Hover: `#D95C4E`
+- Use for: Primary actions, CTAs
+
+**Secondary Button (Grey)**
+- Background: Transparent
+- Border: `#d1d5db`
+- Text: `#374151`
+- Hover: Background `#f3f4f6`
+- Use for: Secondary actions, cancel buttons
+
+#### Links
+
+- Color: `#C94234` (AfriGen Red)
+- No underline by default
+- Hover: `#A33529` with underline
+- Text underline offset: 2px
+
+#### Feature Cards
+
+- Border top: 2px solid `#F4A535` (Yellow)
+- Hover: Border changes to `#E89420`
+- Background: White or transparent
+
+#### Navigation
+
+**Light Mode:**
+- Background: `#ffffff`
+- Text: `#000000`
+- Border bottom: 1px solid `#e5e7eb`
+
+**Dark Mode:**
+- Background: `#1f2937`
+- Text: `#ffffff`
+- Border: None
+
+### Design Principles
+
+#### 1. Clean and Minimal
+- White space is intentional and important
+- Remove unnecessary decorative elements
+- Focus on content readability
+
+#### 2. Accessible
+- Maintain WCAG AA contrast ratios
+- Provide text alternatives for images
+- Ensure keyboard navigation works
+
+#### 3. Consistent
+- Use the same spacing scale throughout
+- Apply colors consistently (red for links, yellow for accents)
+- Maintain visual hierarchy
+
+#### 4. Professional
+- Clean header with subtle borders
+- Subdued scrollbars that don't distract
+- Thoughtful use of brand colors as accents
+
+#### 5. Branded
+- Strategic use of AfriGen-D colors from logo
+- Balance brand identity with readability
+- Header remains clean while links and buttons show brand colors
+
+### CSS Variables (VitePress)
+
+The documentation sites use CSS custom properties defined in `.vitepress/theme/style.css`:
+
+```css
+/* AfriGen-D brand colors from logo */
+--afrigen-red: #C94234;
+--afrigen-red-light: #D95C4E;
+--afrigen-red-dark: #A33529;
+--afrigen-yellow: #F4A535;
+--afrigen-yellow-light: #F6B854;
+--afrigen-yellow-dark: #E89420;
+--afrigen-green: #2E7D32;
+--afrigen-green-light: #4CAF50;
+--afrigen-green-dark: #1B5E20;
+
+/* VitePress brand color variables */
+--vp-c-brand: #C94234;
+--vp-c-brand-light: #D95C4E;
+--vp-c-brand-dark: #A33529;
+--vp-c-accent: #F4A535;
+```
+
+### Dark Mode Support
+
+All templates include comprehensive dark mode support:
+
+- **Background**: `#1f2937` (dark grey)
+- **Text**: `#ffffff` (white)
+- **Borders**: Darker variations
+- **Brand colors**: Slightly adjusted for better visibility
+
+### Spacing Scale
+
+Use consistent spacing throughout:
+
+| Size | Value | Usage |
+|------|-------|-------|
+| xs | 4px | Tight spacing |
+| sm | 8px | Small gaps |
+| md | 16px | Default spacing |
+| lg | 24px | Section spacing |
+| xl | 32px | Large section breaks |
+| 2xl | 48px | Hero sections |
 
 ## Template Variables Reference
 

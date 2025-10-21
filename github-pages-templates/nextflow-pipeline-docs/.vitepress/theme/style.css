@@ -5,17 +5,74 @@
 /* CSS Custom Properties */
 :root {
   --vp-nav-logo-height: 100%;
-  
-  /* AfriGen-D brand colors */
-  --vp-c-brand: #2E7D32;
-  --vp-c-brand-light: #4CAF50;
-  --vp-c-brand-lighter: #66BB6A;
-  --vp-c-brand-dark: #1B5E20;
-  --vp-c-brand-darker: #2E7D32;
-  
-  --vp-c-accent: #FFA000;
-  --vp-c-accent-light: #FFB300;
-  --vp-c-accent-dark: #FF8F00;
+
+  /* AfriGen-D brand colors from logo */
+  --afrigen-red: #C94234;
+  --afrigen-red-light: #D95C4E;
+  --afrigen-red-dark: #A33529;
+  --afrigen-yellow: #F4A535;
+  --afrigen-yellow-light: #F6B854;
+  --afrigen-yellow-dark: #E89420;
+  --afrigen-green: #2E7D32;
+  --afrigen-green-light: #4CAF50;
+  --afrigen-green-dark: #1B5E20;
+
+  /* VitePress brand color variables (using AfriGen-D red) */
+  --vp-c-brand: #C94234;
+  --vp-c-brand-light: #D95C4E;
+  --vp-c-brand-lighter: #E37164;
+  --vp-c-brand-dark: #A33529;
+  --vp-c-brand-darker: #8A2D22;
+
+  /* Accent color (AfriGen-D yellow/gold) */
+  --vp-c-accent: #F4A535;
+  --vp-c-accent-light: #F6B854;
+  --vp-c-accent-dark: #E89420;
+
+  /* Simple header styling - white background with black text */
+  --vp-nav-bg-color: #ffffff;
+  --vp-nav-screen-bg-color: #ffffff;
+}
+
+/* Dark mode color overrides */
+.dark {
+  --vp-nav-bg-color: #1f2937;
+  --vp-c-brand-dark: #D95C4E;
+  --vp-c-brand-darker: #E37164;
+}
+
+/* Override navbar background to white */
+.VPNav {
+  background-color: var(--vp-nav-bg-color) !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.VPNavBar {
+  background-color: var(--vp-nav-bg-color) !important;
+}
+
+/* Ensure nav text is black */
+.VPNavBarMenu .VPLink,
+.VPNavBarMenuLink,
+.VPNavBarTitle .title {
+  color: #000000 !important;
+}
+
+.VPNavBarMenu .VPLink:hover,
+.VPNavBarMenuLink:hover {
+  color: #374151 !important;
+}
+
+/* Dark mode nav text */
+.dark .VPNavBarMenu .VPLink,
+.dark .VPNavBarMenuLink,
+.dark .VPNavBarTitle .title {
+  color: #ffffff !important;
+}
+
+.dark .VPNavBarMenu .VPLink:hover,
+.dark .VPNavBarMenuLink:hover {
+  color: #e5e7eb !important;
 }
 
 .VPNavBarTitle .logo {
@@ -50,30 +107,49 @@
   margin: 0 auto;
 }
 
-
-/* Button styling with AfriGen-D colors */
+/* Button styling - AfriGen-D red primary, grey secondary */
 .VPButton.brand {
-  background-color: var(--vp-c-brand);
-  border-color: var(--vp-c-brand);
+  background-color: var(--afrigen-red);
+  border-color: var(--afrigen-red);
+  color: #ffffff;
 }
 
 .VPButton.brand:hover {
-  background-color: var(--vp-c-brand-light);
-  border-color: var(--vp-c-brand-light);
+  background-color: var(--afrigen-red-light);
+  border-color: var(--afrigen-red-light);
 }
 
-/* Link colors */
+.VPButton.alt {
+  background-color: transparent;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.VPButton.alt:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* Link colors - AfriGen-D red */
 .VPContent a {
-  color: var(--vp-c-brand);
+  color: var(--afrigen-red);
+  text-decoration: none;
 }
 
 .VPContent a:hover {
-  color: var(--vp-c-brand-light);
+  color: var(--afrigen-red-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--afrigen-red-dark);
+  text-underline-offset: 2px;
 }
 
-/* Feature cards with AfriGen-D accent */
+/* Feature cards - yellow/gold accent border */
 .VPFeature {
-  border-top: 2px solid var(--vp-c-accent);
+  border-top: 2px solid var(--afrigen-yellow);
+}
+
+.VPFeature:hover {
+  border-top-color: var(--afrigen-yellow-dark);
 }
 
 /* Code block styling */
@@ -85,21 +161,34 @@
   background-color: #f6f8fa;
 }
 
-/* Custom scrollbar */
+/* Simple scrollbar styling - subtle grey */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--vp-c-bg-soft);
+  background: #f3f4f6;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--vp-c-brand);
+  background: #d1d5db;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--vp-c-brand-dark);
+  background: #9ca3af;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
 }
