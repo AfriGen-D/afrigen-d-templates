@@ -348,37 +348,37 @@ The AfriGen-D brand uses a distinctive color palette inspired by the logo:
 
 #### Primary Colors
 
-| Color | Hex Code | Usage | Preview |
-|-------|----------|-------|---------|
-| **AfriGen Red** | `#C94234` | Primary brand color, links, primary buttons | ![#C94234](https://via.placeholder.com/50x20/C94234/C94234.png) |
-| **AfriGen Red Light** | `#D95C4E` | Hover states, lighter accents | ![#D95C4E](https://via.placeholder.com/50x20/D95C4E/D95C4E.png) |
-| **AfriGen Red Dark** | `#A33529` | Active states, darker accents | ![#A33529](https://via.placeholder.com/50x20/A33529/A33529.png) |
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **AfriGen Red** | `#C94234` | Primary brand color, links, primary buttons |
+| **AfriGen Red Light** | `#D95C4E` | Hover states, lighter accents |
+| **AfriGen Red Dark** | `#A33529` | Active states, darker accents |
 
 #### Accent Colors
 
-| Color | Hex Code | Usage | Preview |
-|-------|----------|-------|---------|
-| **AfriGen Yellow** | `#F4A535` | Accent highlights, feature cards | ![#F4A535](https://via.placeholder.com/50x20/F4A535/F4A535.png) |
-| **AfriGen Yellow Light** | `#F6B854` | Lighter accents | ![#F6B854](https://via.placeholder.com/50x20/F6B854/F6B854.png) |
-| **AfriGen Yellow Dark** | `#E89420` | Hover states for yellow elements | ![#E89420](https://via.placeholder.com/50x20/E89420/E89420.png) |
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **AfriGen Yellow** | `#F4A535` | Accent highlights, feature cards |
+| **AfriGen Yellow Light** | `#F6B854` | Lighter accents |
+| **AfriGen Yellow Dark** | `#E89420` | Hover states for yellow elements |
 
 #### Supporting Colors
 
-| Color | Hex Code | Usage | Preview |
-|-------|----------|-------|---------|
-| **AfriGen Green** | `#2E7D32` | DNA helix accent, success states | ![#2E7D32](https://via.placeholder.com/50x20/2E7D32/2E7D32.png) |
-| **AfriGen Green Light** | `#4CAF50` | Lighter green accents | ![#4CAF50](https://via.placeholder.com/50x20/4CAF50/4CAF50.png) |
-| **AfriGen Green Dark** | `#1B5E20` | Darker green accents | ![#1B5E20](https://via.placeholder.com/50x20/1B5E20/1B5E20.png) |
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **AfriGen Green** | `#2E7D32` | DNA helix accent, success states |
+| **AfriGen Green Light** | `#4CAF50` | Lighter green accents |
+| **AfriGen Green Dark** | `#1B5E20` | Darker green accents |
 
 #### Neutral Colors
 
-| Color | Hex Code | Usage | Preview |
-|-------|----------|-------|---------|
-| **Black** | `#000000` | Text, headers (light mode) | ![#000000](https://via.placeholder.com/50x20/000000/000000.png) |
-| **Dark Grey** | `#374151` | Secondary text, icons | ![#374151](https://via.placeholder.com/50x20/374151/374151.png) |
-| **Medium Grey** | `#9ca3af` | Borders, inactive elements | ![#9ca3af](https://via.placeholder.com/50x20/9ca3af/9ca3af.png) |
-| **Light Grey** | `#e5e7eb` | Backgrounds, dividers | ![#e5e7eb](https://via.placeholder.com/50x20/e5e7eb/e5e7eb.png) |
-| **White** | `#ffffff` | Backgrounds, cards (light mode) | ![#ffffff](https://via.placeholder.com/50x20/ffffff/ffffff.png) |
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **Black** | `#000000` | Text, headers (light mode) |
+| **Dark Grey** | `#374151` | Secondary text, icons |
+| **Medium Grey** | `#9ca3af` | Borders, inactive elements |
+| **Light Grey** | `#e5e7eb` | Backgrounds, dividers |
+| **White** | `#ffffff` | Backgrounds, cards (light mode) |
 
 ### Typography
 
